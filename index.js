@@ -26,6 +26,11 @@ function highlight (lang, code) {
     // Normalize lang
   lang = normalize(lang)
 
+  if (lang === 'diff') {
+    const diff2html = require('diff2html').Diff2Html
+    return diff2html.getPrettyHtmlFromDiff(code)
+  }
+
   try {
     return hljs.highlight(lang, code).value
   } catch (e) { }
