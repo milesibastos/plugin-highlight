@@ -2,7 +2,7 @@
   "name": "gitbook-plugin-highlightjs",
   "description": "highlight.js for GitBook with diff2html",
   "main": "index.js",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "author": "@milesibastos",
   "engines": {
     "gitbook": ">=2.4.0"
